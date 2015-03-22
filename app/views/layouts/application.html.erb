@@ -21,11 +21,29 @@
 
 
 <body>
+
+ 	 <a id="menu" href="#sidr">
+  	<img alt="Open" class="icon-menu" src="/assets/menu-white.svg" width="24px" /></a>
+ 
+<div id="sidr">
+  <ul>
+    <li><%= link_to'Home', "/home" %></li>
+    <li><%= link_to'About', "/about" %></li>
+    <li><%= link_to'Contact', "/contact" %></li>
+  </ul>
+  <img alt="Close" class="icon-close" src="/assets/close-white.svg" width="24px" /> </div>
 	
 
 <%= yield %>
 
+<div class="footer"> 
+ 		 		<div class="container"> 
+ 		 			<p>A Shutterbugg Project</p> 
+ 		 		</div>
+ 		 		 </div> 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<script src="javascripts/jquery.js"></script>
+    <script src="javascripts/sidr/jquery.sidr.min.js"></script>
 </body>
 </html>
 
